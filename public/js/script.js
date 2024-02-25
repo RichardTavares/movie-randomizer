@@ -110,7 +110,8 @@ function getMovie(selectedGenre = '') {
             let eligibleMovies = data.results.filter(movie => {
                 const releaseYear = parseInt(movie.release_date?.substring(0, 4));
                 const hasOverview = movie.overview.trim() !== '';
-                return releaseYear >= 1985 && hasOverview;
+                const isHorrorGenre = movie.genre_ids.includes(27);
+                return releaseYear >= 1985 && hasOverview && !isHorrorGenre;
             });
 
             if (eligibleMovies.length === 0) {
