@@ -1,8 +1,10 @@
 ::-webkit-scrollbar {
     width: 0px;
-    /* Remove scrollbar space */
     background: transparent;
-    /* Optional: just make scrollbar invisible */
+}
+
+body {
+    background-color: #000;
 }
 
 @media (max-width: 768px) {
@@ -13,4 +15,16 @@
     img {
         margin-bottom: 10%;
     }
+}
+
+.font-kode {
+    font-family: "Kode Mono", monospace;
+}
+
+.font-nunito {
+    font-family: "Nunito", sans-serif;
+}
+
+.poster {
+    max-width: 220px
 }

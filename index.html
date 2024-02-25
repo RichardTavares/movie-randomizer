@@ -12,20 +12,29 @@
         <link rel="icon" type="image/png" sizes="16x16" href="public/img/logo.png">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="public/css/style.css">
     </head>
 
-    <body class="d-flex flex-column min-vh-100 bg-dark text-white">
+    <body class="d-flex flex-column min-vh-100 text-white">
         <div class="container flex-grow-1">
-            <section class="text-center">
+            <section class="text-center font-kode">
                 <h1 class="mt-4">Movie Randomizer</h1>
-                <button id="findMovie" class="btn btn-outline-info mt-4">Sortear Filme</button>
+                <button id="findMovie" class="btn btn-outline-info mt-2">
+                    <i class="bi-shuffle m-2"></i>
+                    <span>Sortear Filme</span>
+                </button>
             </section>
             <hr>
-            <div id="movieInfo"></div>
+            <div class="font-nunito" id="movieInfo"></div>
         </div>
-        <footer class="footer text-center py-2">
+        <footer class="footer font-kode text-center py-2">
             <b>&copy; Movie Randomizer</b><br>
             <small>Desenvolvido por <a class="text-info" href="https://github.com/RichardTavares">Richard Tavares</a></small>
         </footer>
