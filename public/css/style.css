@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+@media (max-width: 768px) {
+    #movie-info {
+        text-align: center;
+    }
+
+    img {
+        margin-bottom: 10%;
+    }
+}
